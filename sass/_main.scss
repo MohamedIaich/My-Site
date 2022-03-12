@@ -1,0 +1,60 @@
+// main: style.scss
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  .chi-sono, .hard-skills, .soft-skills, .lingue {
+    color: $first-text-color;
+    font-size: 45px;
+    margin-top: 100px;
+  }
+    .presentazione {
+      background-color: $first-background-container;
+      padding: 10px;
+      border-radius: 40px;
+      width: 300px;
+      height: 600px;
+      font-size: 25px;
+    }
+    .programmi {
+      background-color: $second-background-container;
+      border-radius: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .logo-program {
+        width: 250px;
+        height: 300px;
+        margin-top: 80px;
+      }
+      .css {
+        width: 190px;
+        height: 250px;
+        margin-top: 80px;
+      }
+      .bootstrap {
+        width: 330px;
+        height: 350px;
+        margin-top: 80px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .testo-soft-skills, .testo-lingue {
+      background-color: $first-background-container;
+      color: $second-text-color;
+      padding: 10px;
+      border-radius: 40px;
+      width: 300px;
+      height: 300px;
+      font-size: 25px;
+      text-align: left;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
