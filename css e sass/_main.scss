@@ -29,16 +29,17 @@ main {
         width: 250px;
         height: 300px;
         margin-top: 80px;
+        margin-bottom: 80px;
       }
-      .css {
-        width: 190px;
-        height: 250px;
-        margin-top: 80px;
-      }
+      // .css {
+      //   width: 190px;
+      //   height: 250px;
+      //   margin-top: 80px;
+      // }
       .bootstrap {
-        width: 330px;
-        height: 350px;
-        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       img {
         width: 100%;
@@ -58,3 +59,58 @@ main {
       align-items: center;
     }
   }
+
+  /* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  main {
+    .chi-sono {
+      .presentazione {
+        width: 600px;
+        height: 300px
+      }
+    }
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  main {
+    .chi-sono {
+      width: 1000px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 60px;
+      h3 {
+        width: 300px;
+        word-wrap: break-word;
+      }
+      .presentazione {
+        width: 600px;
+        height: 300px
+      }
+    }
+    .hard-skills {
+      width: 1000px;
+      font-size: 60px;
+    }
+    .programmi {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .logo-program {
+        width: 50%;
+        img {
+          height: 100%;
+          width: initial;
+        }
+      }
+    }
+    .seconda-parte-main {
+      width: 850px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+  }
+}

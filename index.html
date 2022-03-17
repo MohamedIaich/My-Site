@@ -4,8 +4,32 @@
     <meta charset="utf-8">
     <title>Mohamed Iaich Site</title>
     <link rel="stylesheet" href="css e sass/style.min.css">
-    <link rel="icon" type="image/x-icon href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('tB4hOcn2bvMVJrFFF');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
   </head>
   <body>
     <header>
@@ -56,25 +80,27 @@
           </div>
         </div>
       </div>
-      <div class="soft-skills">
-        <h3>SOFT SKILLS</h3>
-        <div class="testo-soft-skills">
-          <ul>
-            <li>Attitudine al lavoro di gruppo</li>
-            <li>Capacità di problem solving</li>
-            <li>Capacità di lavorare in autonomia</li>
-          </ul>
+      <div class="seconda-parte-main">
+        <div class="soft-skills">
+          <h3>SOFT SKILLS</h3>
+          <div class="testo-soft-skills">
+            <ul>
+              <li>Attitudine al lavoro di gruppo</li>
+              <li>Capacità di problem solving</li>
+              <li>Capacità di lavorare in autonomia</li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="lingue">
-        <h3>LINGUE</h3>
-        <div class="testo-lingue">
-          <p>
-            Italiano: L1  <br>
-            Arabo: B1 <br>
-            Inglese: B1 <br>
-            Francese: A2 <br>
-          </p>
+        <div class="lingue">
+          <h3>LINGUE</h3>
+          <div class="testo-lingue">
+            <p>
+              Italiano: L1  <br>
+              Arabo: B1 <br>
+              Inglese: B1 <br>
+              Francese: A2 <br>
+            </p>
+          </div>
         </div>
       </div>
     </main>
@@ -82,10 +108,11 @@
     <footer>
       <div>
         <h3 class="contact"> Contact me </h3>
-        <form>
-          <input type="text" class="form-inputs" name="fname" placeholder="Nome e Cognome"><br><br>
-          <input type="email" class="form-inputs" name="lname" placeholder="Email"><br><br><br>
-          <textarea class="form-textarea" placeholder="Richiesta..." rows="4" cols="50">
+        <form id="contact-form">
+          <input type="hidden" name="contact_number">
+          <input type="text" class="form-inputs" name="user_name" placeholder="Nome e Cognome"><br><br>
+          <input type="email" class="form-inputs" name="user_email" placeholder="Email"><br><br><br>
+          <textarea class="form-textarea" name="message" rows="4" cols="50">
           </textarea><br><br>
           <input Class="invia" type="submit" value="INVIA">
         </form>

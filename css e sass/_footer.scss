@@ -37,7 +37,7 @@ footer {
     .icone {
       width: 42px;
       height: 35px;
-      margin-left: 30px;
+      margin-left: 20px;
       img {
         width: 100%;
       }
@@ -48,5 +48,37 @@ footer {
     text-align: center;
     margin-top: 60px;
     margin-left: calc(100% - 95%)
+  }
+}
+
+  /* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  footer {
+    .form-inputs {
+      width: 500px;
+      height: 35px;
+      margin-left: calc(50% - 250px);
+    }
+    .form-textarea {
+      width: 500px;
+      height: 130px;
+      margin-left: calc(50% - 250px);
+    }
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  footer {
+    .form-inputs {
+      width: 500px;
+      height: 35px;
+      margin-left: calc(50% - 250px);
+    }
+    .form-textarea {
+      width: 500px;
+      height: 130px;
+      margin-left: calc(50% - 250px);
+    }
   }
 }
