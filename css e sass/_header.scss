@@ -15,10 +15,12 @@ header {
     }
   }
   .testo-header{
-    text-align: center;
-    color: $first-text-color;
-    margin-top: 140px;
-    font-size: 45px;
+    p {
+      text-align: center;
+      color: $first-text-color;
+      margin-top: 140px;
+      font-size: 45px;
+    }
   }
 }
 
@@ -49,7 +51,9 @@ header {
       }
     }
     .testo-header {
-      font-size: 100px;
+      P {
+        font-size: 80px;
+      }
     }
   }
 }

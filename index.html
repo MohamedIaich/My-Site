@@ -95,10 +95,10 @@
           <h3>LINGUE</h3>
           <div class="testo-lingue">
             <p>
-              Italiano: L1  <br>
-              Arabo: B1 <br>
-              Inglese: B1 <br>
-              Francese: A2 <br>
+              <img class="flag" src="img/italy-flag.png" alt=""> Italiano: L1  <br>
+              <img class="flag" src="img/arabia-flag.png" alt=""> Arabo: B1 <br>
+              <img class="flag" src="img/uk-flag.png" alt=""> Inglese: B1 <br>
+              <img class="flag" src="img/francia-flag.png" alt=""> Francese: A2 <br>
             </p>
           </div>
         </div>
@@ -112,9 +112,8 @@
           <input type="hidden" name="contact_number">
           <input type="text" class="form-inputs" name="user_name" placeholder="Nome e Cognome"><br><br>
           <input type="email" class="form-inputs" name="user_email" placeholder="Email"><br><br><br>
-          <textarea class="form-textarea" name="message" rows="4" cols="50">
-          </textarea><br><br>
-          <input Class="invia" type="submit" value="INVIA">
+          <textarea class="form-textarea" name="message" rows="4" cols="50"></textarea><br><br>
+          <input Class="invia" type="submit" onclick="myFunction()" value="INVIA">
         </form>
         <div class="footer-nav">
           <div class="github icone">
@@ -136,5 +135,10 @@
         <h6>Copyright © Mohamed Iaich 2022</h6>
       </div>
     </footer>
+    <script>
+    function myFunction() {
+      document.getElementById("contact-form").reset();
+    }
+</script>
   </body>
 </html>

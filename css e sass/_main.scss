@@ -57,7 +57,14 @@ main {
       display: flex;
       justify-content: center;
       align-items: center;
+      p{
+        .flag {
+          width: 20px;
+          height: 20px;
+        }
+      }
     }
+
   }
 
   /* Tablet Styles */
