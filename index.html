@@ -3,14 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Mohamed Iaich Site</title>
-    <link rel="stylesheet" href="css e sass/style.min.css">
+    <link rel="stylesheet" href="assets/css-sass/style.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            // https://dashboard.emailjs.com/admin/integration
             emailjs.init('tB4hOcn2bvMVJrFFF');
         })();
     </script>
@@ -18,9 +17,7 @@
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
-                // generate a five digit number for the contact_number variable
                 this.contact_number.value = Math.random() * 100000 | 0;
-                // these IDs from the previous steps
                 emailjs.sendForm('contact_service', 'contact_form', this)
                     .then(function() {
                         console.log('SUCCESS!');
@@ -35,19 +32,19 @@
     <header>
       <nav>
         <div class="github icone">
-            <a href="https://github.com/MohamedIaich" target="_blank"><img src="img/github.png" alt=""></a>
+            <a href="https://github.com/MohamedIaich" target="_blank"><img src="assets/img/github.png" alt=""></a>
         </div>
         <div class="linkedin icone">
-            <a href="https://www.linkedin.com/in/mohamed-iaich/" target="_blank"><img src="img/linkedin.jpg" alt=""></a>
+            <a href="https://www.linkedin.com/in/mohamed-iaich/" target="_blank"><img src="assets/img/linkedin.jpg" alt=""></a>
         </div>
         <div class="insta icone">
-            <a href="https://www.instagram.com/m_iaich/" target="_blank"><img src="img/insta.jpg" alt=""></a>
+            <a href="https://www.instagram.com/m_iaich/" target="_blank"><img src="assets/img/insta.jpg" alt=""></a>
         </div>
         <div class="facebook icone">
-            <a href="https://www.facebook.com/mohamed.iaich.12" target="_blank"><img src="img/facebook.jpg" alt=""></a>
+            <a href="https://www.facebook.com/mohamed.iaich.12" target="_blank"><img src="assets/img/facebook.jpg" alt=""></a>
         </div>
         <div class="whatsapp icone">
-            <a href="https://api.whatsapp.com/send?phone=393393685515" target="_blank"><img src="img/whatsapp.jpg" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=393393685515" target="_blank"><img src="assets/img/whatsapp.jpg" alt=""></a>
         </div>
       </nav>
       <div class="testo-header">
@@ -67,16 +64,16 @@
         <h3>HARD SKILLS?</h3>
         <div class="programmi">
           <div class="logo-program html">
-            <img src="img/HTML.png" alt="">
+            <img src="assets/img/HTML.png" alt="">
           </div>
           <div class="logo-program css">
-            <img src="img/CSS.png" alt="">
+            <img src="assets/img/CSS.png" alt="">
           </div>
           <div class="logo-program bootstrap">
-            <img src="img/bootstrap-logo.png" alt="">
+            <img src="assets/img/bootstrap-logo.png" alt="">
           </div>
           <div class="logo-program sass">
-            <img src="img/2560px-Sass_Logo_Color.svg.png" alt="">
+            <img src="assets/img/2560px-Sass_Logo_Color.svg.png" alt="">
           </div>
         </div>
       </div>
@@ -95,10 +92,10 @@
           <h3>LINGUE</h3>
           <div class="testo-lingue">
             <p>
-              <img class="flag" src="img/italy-flag.png" alt=""> Italiano: L1  <br>
-              <img class="flag" src="img/arabia-flag.png" alt=""> Arabo: B1 <br>
-              <img class="flag" src="img/uk-flag.png" alt=""> Inglese: B1 <br>
-              <img class="flag" src="img/francia-flag.png" alt=""> Francese: A2 <br>
+              <img class="flag" src="assets/img/italy-flag.png" alt=""> Italiano: L1  <br>
+              <img class="flag" src="assets/img/arabia-flag.png" alt=""> Arabo: B1 <br>
+              <img class="flag" src="assets/img/uk-flag.png" alt=""> Inglese: B1 <br>
+              <img class="flag" src="assets/img/francia-flag.png" alt=""> Francese: A2 <br>
             </p>
           </div>
         </div>
@@ -117,19 +114,19 @@
         </form>
         <div class="footer-nav">
           <div class="github icone">
-            <a href="https://github.com/MohamedIaich" target="_blank"><img src="img/github.png" alt=""></a>
+            <a href="https://github.com/MohamedIaich" target="_blank"><img src="assets/img/github.png" alt=""></a>
           </div>
           <div class="linkedin icone">
-            <a href="https://www.linkedin.com/in/mohamed-iaich/" target="_blank"><img src="img/linkedin.jpg" alt=""></a>
+            <a href="https://www.linkedin.com/in/mohamed-iaich/" target="_blank"><img src="assets/img/linkedin.jpg" alt=""></a>
           </div>
           <div class="insta icone">
-            <a href="https://www.instagram.com/m_iaich/" target="_blank"><img src="img/insta.jpg" alt=""></a>
+            <a href="https://www.instagram.com/m_iaich/" target="_blank"><img src="assets/img/insta.jpg" alt=""></a>
           </div>
           <div class="facebook icone">
-            <a href="https://www.facebook.com/mohamed.iaich.12" target="_blank"><img src="img/facebook.jpg" alt=""></a>
+            <a href="https://www.facebook.com/mohamed.iaich.12" target="_blank"><img src="assets/img/facebook.jpg" alt=""></a>
           </div>
           <div class="whatsapp icone">
-            <a href="https://api.whatsapp.com/send?phone=393393685515" target="_blank"><img src="img/whatsapp.jpg" alt=""></a>
+            <a href="https://api.whatsapp.com/send?phone=393393685515" target="_blank"><img src="assets/img/whatsapp.jpg" alt=""></a>
           </div>
         </div>
         <h6>Copyright © Mohamed Iaich 2022</h6>
@@ -139,6 +136,6 @@
     function myFunction() {
       document.getElementById("contact-form").reset();
     }
-</script>
+    </script>
   </body>
 </html>

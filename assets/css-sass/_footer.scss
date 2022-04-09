@@ -38,6 +38,9 @@ footer {
       width: 42px;
       height: 35px;
       margin-left: 20px;
+      .icone:first-child {
+        margin-left: 0;
+      }
       img {
         width: 100%;
       }
@@ -52,23 +55,29 @@ footer {
 }
 
   /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 641px) and (max-width: 1007px) {
   footer {
     .form-inputs {
-      width: 500px;
+      width: 400px;
       height: 35px;
       margin-left: calc(50% - 250px);
+      margin: auto;
     }
     .form-textarea {
-      width: 500px;
+      width: 400px;
       height: 130px;
       margin-left: calc(50% - 250px);
+      margin: auto;
+    }
+    .footer-nav {
+      display: flex;
+      justify-content: center;
     }
   }
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 961px) {
+@media only screen and (min-width: 1008px) {
   footer {
     .form-inputs {
       width: 500px;
